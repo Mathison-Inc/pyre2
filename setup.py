@@ -56,7 +56,9 @@ else:
 
 
 # Locate the re2 module
-_re2_prefixes = ['/usr', '/usr/local', '/opt/', os.environ['HOME'] + '/.local']
+_re2_prefixes = ['/usr', '/usr/local', '/opt/']
+if 'HOME' in os.environ:
+    _re2_prefixes.append(os.environ['HOME'] + '/.local')
 
 re2_prefix = ''
 for a in _re2_prefixes:
