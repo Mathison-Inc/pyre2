@@ -111,8 +111,8 @@ def main():
                 'warn.unreachable': True,
             })
     setup(
-        name='re3',
-        version='0.2.23',
+        name='re2',
+        version='0.2.24',
         description='Python wrapper for Google\'s RE2 using Cython',
         long_description=get_long_description(),
         author=get_authors(),
