@@ -137,7 +137,7 @@ SREPattern = type(re.compile(''))
 _cache = {}
 _cache_repl = {}
 
-_MAXCACHE = 100
+_MAXCACHE = 25
 
 
 include "compile.pxi"
